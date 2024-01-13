@@ -1,0 +1,43 @@
+.Header {
+    overflow: hidden;
+    background-color: #e8e2e2; /* Example background color */
+    padding: 15px; /* Example padding */
+}
+
+.logo {
+    color: rgb(59, 62, 209); /* Example text color for the logo */
+    font-size: 1.5em; /* Example font size for the logo */
+    margin: 0; /* Example margin */
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right p {
+    display: inline;
+    margin: 0 15px;
+    color: rgb(20, 10, 10); /* Example text color for menu items */
+    text-decoration: none; /* Example text decoration for menu items */
+}
+
+.header-right p.active {
+    background-color: aqua;
+    border: 1px solid aqua; /* Example border style for active menu item */
+    padding: 2px;
+    border-radius: 3px;
+    font-weight: bold; /* Example style for active menu item */
+}
+
+@media screen and (max-width: 500px) {
+    .header-right {
+        float: none;
+        text-align: center;
+        margin-top: 10px; /* Example margin for mobile view */
+    }
+
+    .header-right p {
+        display: block;
+        margin: 5px 0;
+    }
+}
